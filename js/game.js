@@ -29,7 +29,7 @@ function animate() {
 
         background.update()
         player.update()
-      //player2.update()
+        player2.update()
     
         lag -= frameTime
     }

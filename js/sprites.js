@@ -222,7 +222,7 @@ const player = new Fighter({
     }
 })
 
-/*const player2 = new Fighter({
+const player2 = new Fighter({
     position: {
         x: 500,
         y: 0
@@ -231,11 +231,35 @@ const player = new Fighter({
         x: 0,
         y: 0
     },
-    dimensions: {
-        width: 50,
-        height: 200
+    scale: 4,
+    sprites: {
+        idle: {
+            src: "../assets/player1/idle.png",
+            totalSpriteFrames: 11,
+            framesPerSpriteFrame: 12,
+        },
+        running: {
+            src: "../assets/player/running.png",
+            totalSpriteFrames: 8,
+            framesPerSpriteFrame: 8,
+        },
+        jumping: {
+            src: "../assets/player/jumping.png",
+            totalSpriteFrames: 8,
+            framesPerSpriteFrame: 8,
+        },
+        attacking: {
+            src: "../assets/player/attacking.png",
+            totalSpriteFrames: 18,
+            framesPerSpriteFrame: 8,
+        },
+        slideing: {
+            src: "../assets/player/slideing.png",
+            totalSpriteFrames: 10,
+            framesPerSpriteFrame: 8, 
+        },
     }
-}) */
+})
 
 const background = new Sprite({
     position: {
